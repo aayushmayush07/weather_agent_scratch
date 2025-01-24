@@ -28,39 +28,49 @@ This project demonstrates how to build an intelligent weather agent **from scrat
 ## Prerequisites
 
 1. **Python 3.8+**
+
 2. **Clone the Repository**:
-   ```bash
-   git clone git@github.com:aayushmayush07/weather_agent_scratch.git
-   cd weather_agent_scratch
-Create and Activate a Virtual Environment:
+    ```bash
+    git clone git@github.com:aayushmayush07/weather_agent_scratch.git
+    cd weather_agent_scratch
+    ```
 
-bash
-Copy
-Edit
-python -m venv venv
-source venv/bin/activate  # For Linux/macOS
-venv\Scripts\activate     # For Windows
-Install Dependencies: Install the required libraries using the provided requirements.txt file:
+3. **Create and Activate a Virtual Environment**:
+    ```bash
+    python -m venv venv
+    ```
 
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Set Up the .env File: Create a .env file in the root directory of the project and add the following:
+    - **For Linux/macOS**:
+        ```bash
+        source venv/bin/activate
+        ```
+    - **For Windows**:
+        ```bash
+        venv\Scripts\activate
+        ```
 
-env
-Copy
-Edit
-OPENAI_API_KEY=your_openai_api_key
-Replace your_openai_api_key with your actual OpenAI API key.
+4. **Install Dependencies**:
+    Install the required libraries using the provided `requirements.txt` file:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-Load Environment Variables: The .env file will automatically be loaded using the dotenv library.
+5. **Set Up the `.env` File**:
+    Create a `.env` file in the root directory of the project and add the following:
+    ```env
+    OPENAI_API_KEY=your_openai_api_key
+    ```
+    Replace `your_openai_api_key` with your actual OpenAI API key.
 
-Usage
-1. Run the Agent
-Start the agent:
+6. **Load Environment Variables**:
+    The `.env` file will automatically be loaded using the `dotenv` library.
 
-bash
-Copy
-Edit
+---
+
+## Usage
+
+### 1. Run the Agent
+
+Start the agent by executing the main Python script:
+```bash
 python my_agent_scratch.py
